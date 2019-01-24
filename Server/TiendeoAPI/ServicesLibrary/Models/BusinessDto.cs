@@ -4,8 +4,9 @@ using System.Text;
 
 namespace ServicesLibrary.Models
 {
-    public class ServiceDto : LocalDto
+    public class BusinessDto
     {
-        public int ServiceType { get; set; }
+        public string Name { get; set; }
+        public int Rank { get; set; }
     }
 }

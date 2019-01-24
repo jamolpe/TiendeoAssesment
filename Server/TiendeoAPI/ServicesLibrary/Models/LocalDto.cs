@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ServicesLibrary.Models
 {
-    public class LocalDto
+    public abstract class LocalDto
     {
           public double Long { get; set; }
           public double Lat { get; set; }

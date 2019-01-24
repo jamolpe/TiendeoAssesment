@@ -1,0 +1,17 @@
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\bin\Debug\netcoreapp2.1\TiendeoAPI.deps.json
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\bin\Debug\netcoreapp2.1\TiendeoAPI.runtimeconfig.json
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\bin\Debug\netcoreapp2.1\TiendeoAPI.runtimeconfig.dev.json
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\bin\Debug\netcoreapp2.1\TiendeoAPI.dll
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\bin\Debug\netcoreapp2.1\ServicesLibrary.dll
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\bin\Debug\netcoreapp2.1\ServicesLibrary.pdb
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.csprojAssemblyReference.cache
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.csproj.CoreCompileInputs.cache
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.RazorAssemblyInfo.cache
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.RazorAssemblyInfo.cs
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.AssemblyInfoInputs.cache
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.AssemblyInfo.cs
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.RazorTargetAssemblyInfo.cache
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.csproj.CopyComplete
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\bin\Debug\netcoreapp2.1\TiendeoAPI.pdb
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.dll
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\TiendeoAPI\obj\Debug\netcoreapp2.1\TiendeoAPI.pdb

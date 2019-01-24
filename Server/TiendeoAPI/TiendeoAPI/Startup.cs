@@ -11,12 +11,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using ServicesLibrary.Helpers;
+using ServicesLibrary.Interfaces;
+using ServicesLibrary.Services;
 using TiendeoAPI.Models;
 
 namespace TiendeoAPI
 {
     public class Startup
     {
+        private Settings _settings;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,14 +32,17 @@ namespace TiendeoAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            var appSettingsSection = Configuration.GetSection("AppSettings");
-            var settings = appSettingsSection.Get<Settings>();
-            services.Configure<Settings>(appSettingsSection);
-            if (!settings.UseMockData)
-            {
-               // services.AddDbContext<DataContext>(x => x.UseSqlServer(settings.DataBaseConnection));
-            }
+            
+            //services.Configure<Settings>(appSettingsSection);
+            //if (!settings.UseMockData)
+            //{
+            //   services.AddDbContext<DataContext>(x => x.UseSqlServer(settings.DataBaseConnection));
+            //}
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddScoped<IBusinessService, BusinessService>();
+            services.AddScoped<ICityService, CityService>();
+            services.AddScoped<ILocalService, LocalService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +50,8 @@ namespace TiendeoAPI
         {
             if (env.IsDevelopment())
             {
+                var appSettingsSection = Configuration.GetSection("AppSettings");
+                this._settings = appSettingsSection.Get<Settings>();
                 app.UseDeveloperExceptionPage();
             }
             else
