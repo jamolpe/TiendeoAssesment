@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,9 +14,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using ServicesLibrary.Helpers;
+using ServicesLibrary.Helpers.Mocker;
 using ServicesLibrary.Interfaces;
-using ServicesLibrary.Mocker;
 using ServicesLibrary.Services;
+using TiendeoAPI.Helpers.Mappers;
 using TiendeoAPI.Models;
 
 namespace TiendeoAPI
@@ -42,12 +45,16 @@ namespace TiendeoAPI
             if (this._settings.UseMockData)
             {
                 services.AddDbContext<DataContext>(x => x.UseInMemoryDatabase("TiendeoDB"));
-
             }
             else
             {
                 services.AddDbContext<DataContext>(x => x.UseSqlServer(this._settings.DataBaseConnection));
             }
+            Mapper.Initialize(cfg =>
+            {
+                cfg.AddProfile(new BusinessMapper());
+                cfg.AddProfile(new CityMapper());
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IBusinessService, BusinessService>();

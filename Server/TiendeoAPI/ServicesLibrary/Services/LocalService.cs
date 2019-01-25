@@ -26,5 +26,11 @@ namespace ServicesLibrary.Services
         {
             return this._context.Stores.ToList();
         }
+
+        public List<StoreDto> GetAllStoresOrderedByRank()
+        {
+            return this._context.Stores.OrderBy(x => x.RankPosition).ToList();
+        }
+
     }
 }

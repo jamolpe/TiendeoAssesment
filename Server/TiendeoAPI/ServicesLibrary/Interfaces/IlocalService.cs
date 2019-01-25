@@ -10,5 +10,7 @@ namespace ServicesLibrary.Interfaces
        List<ServiceDto> GetAllServices();
 
        List<StoreDto> GetAllStores();
+
+       List<StoreDto> GetAllStoresOrderedByRank();
    }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using ServicesLibrary.Helpers;
 using ServicesLibrary.Interfaces;
@@ -20,6 +21,11 @@ namespace ServicesLibrary.Services
         public List<CityDto> GetCities()
         {
             return this._context.Cities.ToList();
+        }
+
+        public CityDto GetCityById(int id)
+        {
+            return this._context.Cities.FirstOrDefault(c => c.Id == id);
         }
 
     }

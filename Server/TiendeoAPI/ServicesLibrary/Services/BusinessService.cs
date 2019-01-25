@@ -21,5 +21,10 @@ namespace ServicesLibrary.Services
         {
             return this._context.Business.ToList();
         }
+
+        public BusinessDto GetBusinessById(int id)
+        {
+            return this._context.Business.FirstOrDefault(b => b.Id == id);
+        }
     }
 }

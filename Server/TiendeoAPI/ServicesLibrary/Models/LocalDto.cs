@@ -10,6 +10,7 @@ namespace ServicesLibrary.Models
           public double Long { get; set; }
           public double Lat { get; set; }
           public string Adress { get; set; }
+          public int CityId { get; set; }
 
     }
 }

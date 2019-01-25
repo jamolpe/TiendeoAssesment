@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace TiendeoAPI.Models
 {
-    public class StoreModel : LocalModel
+    public class BusinessModel
     {
         public string Name { get; set; }
-        public int RankPosition { get; set; }
-        public BusinessModel Business { get; set; }
-
+        public string Marker { get; set; }
+        public int Rank { get; set; }
     }
 }

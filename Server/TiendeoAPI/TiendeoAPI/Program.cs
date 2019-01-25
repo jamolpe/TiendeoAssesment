@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using ServicesLibrary.Helpers;
-using ServicesLibrary.Mocker;
 
 namespace TiendeoAPI
 {
