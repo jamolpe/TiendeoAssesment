@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ServicesLibrary.Interfaces;
+using ServicesLibrary.Models;
 
 namespace TiendeoAPI.Controllers
 {
@@ -10,11 +12,16 @@ namespace TiendeoAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private ICityService _cityService;
+        public ValuesController(ICityService cityService)
+        {
+            this._cityService = cityService;
+        }
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<CityDto>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return this._cityService.GetCities();
         }
 
         // GET api/values/5
