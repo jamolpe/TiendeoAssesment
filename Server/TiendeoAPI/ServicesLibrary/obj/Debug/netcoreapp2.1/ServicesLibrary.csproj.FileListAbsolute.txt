@@ -1,0 +1,12 @@
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\bin\Debug\netcoreapp2.1\ServicesLibrary.deps.json
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\bin\Debug\netcoreapp2.1\ServicesLibrary.dll
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\bin\Debug\netcoreapp2.1\ServicesLibrary.pdb
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\obj\Debug\netcoreapp2.1\ServicesLibrary.csproj.CoreCompileInputs.cache
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\obj\Debug\netcoreapp2.1\ServicesLibrary.AssemblyInfoInputs.cache
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\obj\Debug\netcoreapp2.1\ServicesLibrary.AssemblyInfo.cs
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\obj\Debug\netcoreapp2.1\ServicesLibrary.dll
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\obj\Debug\netcoreapp2.1\ServicesLibrary.pdb
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\obj\Debug\netcoreapp2.1\ServicesLibrary.csprojAssemblyReference.cache
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+C:\Users\jamolpe\Documents\Repos\TiendeoAssesment\Server\TiendeoAPI\ServicesLibrary\obj\Debug\netcoreapp2.1\ServicesLibrary.csproj.CopyComplete
