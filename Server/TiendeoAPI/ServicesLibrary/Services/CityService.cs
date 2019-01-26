@@ -28,5 +28,10 @@ namespace ServicesLibrary.Services
             return this._context.Cities.FirstOrDefault(c => c.Id == id);
         }
 
+        public CityDto GetCityByName(string name)
+        {
+            return this._context.Cities.FirstOrDefault(x => x.Name == name);
+        }
+
     }
 }

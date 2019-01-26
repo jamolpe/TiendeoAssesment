@@ -5,7 +5,7 @@ using TiendeoAPI.Helpers.enums;
 
 namespace TiendeoAPI.Models
 {
-    class ServiceModel : LocalModel
+    public class ServiceModel : LocalModel
     {
         public ServiceTypes ServiceType { get; set; }
     }

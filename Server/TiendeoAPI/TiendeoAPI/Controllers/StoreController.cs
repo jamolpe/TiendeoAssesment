@@ -27,7 +27,7 @@ namespace TiendeoAPI.Controllers
             try
             {
                 var result = this._storeCore.GetStoresOrderByRank();
-                if (result != null)
+                if (result != null && result.Any())
                 {
                     return Ok(result);
                 }
@@ -82,7 +82,7 @@ namespace TiendeoAPI.Controllers
                 if (userCoords != null)
                 {
                     var result = this._storeCore.GetXNearestStoresFromCoords(userCoords,count);
-                    if (result != null)
+                    if (result != null && result.Any())
                     {
                         return Ok(result);
                     }

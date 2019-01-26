@@ -18,6 +18,7 @@ using ServicesLibrary.Helpers.Mocker;
 using ServicesLibrary.Interfaces;
 using ServicesLibrary.Services;
 using TiendeoAPI.Core.Interfaces;
+using TiendeoAPI.Core.ServiceCore;
 using TiendeoAPI.Core.StoreCore;
 using TiendeoAPI.Helpers.Mappers;
 using TiendeoAPI.Models;
@@ -65,6 +66,7 @@ namespace TiendeoAPI
             services.AddScoped<ICityService, CityService>();
             services.AddScoped<ILocalService, LocalService>();
             services.AddScoped<IStoreCore, StoreCore>();
+            services.AddScoped<IServiceCore, ServiceCore>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

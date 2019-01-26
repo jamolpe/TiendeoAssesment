@@ -12,6 +12,7 @@ namespace ServicesLibrary.Interfaces
        
        List<CityDto> GetCities();
        CityDto GetCityById(int id);
+       CityDto GetCityByName(string name);
 
     }
 }

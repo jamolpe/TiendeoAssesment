@@ -27,15 +27,15 @@ namespace TiendeoAPI.Core.StoreCore
         public List<StoreModel> GetStoresOrderByRank()
         {
             List<StoreModel> resultStores = new List<StoreModel>();
-            var stores = this._localService.GetAllStores();
+            var storesDtos = this._localService.GetAllStores();
 
-            stores.ForEach(store =>
+            storesDtos.ForEach(store =>
             {
                 var storeModel = Mapper.Map<StoreModel>(store);
-                var businessModel = this._businessService.GetBusinessById(store.BusinessId);
-                var cityModel = this._cityService.GetCityById(store.CityId);
-                storeModel.Business = (businessModel != null) ? Mapper.Map<BusinessModel>(businessModel) : null;
-                storeModel.City = (cityModel != null) ? Mapper.Map<CityModel>(cityModel) : null;
+                var businessDto = this._businessService.GetBusinessById(store.BusinessId);
+                var cityDto = this._cityService.GetCityById(store.CityId);
+                storeModel.Business = (businessDto != null) ? Mapper.Map<BusinessModel>(businessDto) : null;
+                storeModel.City = (cityDto != null) ? Mapper.Map<CityModel>(cityDto) : null;
                 resultStores.Add(storeModel);
             });
 
@@ -44,9 +44,9 @@ namespace TiendeoAPI.Core.StoreCore
 
         public StoreDistanceModel GetNearestStoreFromCoords(Coord userCoord)
         {
-            var stores = this._localService.GetAllStores();
+            var storesDtos = this._localService.GetAllStores();
             StoreDistanceModel distanceModel = new StoreDistanceModel();
-            stores.ForEach(store =>
+            storesDtos.ForEach(store =>
             {
                 var distance = this.GetDistanceToStore(userCoord, store);
                 if (distanceModel.Store == null || distanceModel.Distance > distance)
@@ -61,10 +61,10 @@ namespace TiendeoAPI.Core.StoreCore
 
         public List<StoreDistanceModel> GetXNearestStoresFromCoords(Coord userCoord, int number)
         {
-            var stores = this._localService.GetAllStores();
+            var storesDtos = this._localService.GetAllStores();
             List<StoreDistanceModel> distanceModels = new List<StoreDistanceModel>();
 
-            stores.ForEach(store =>
+            storesDtos.ForEach(store =>
             {
                 StoreDistanceModel storeDistanceModel = new StoreDistanceModel();
                 var distance = this.GetDistanceToStore(userCoord, store);
@@ -85,10 +85,10 @@ namespace TiendeoAPI.Core.StoreCore
         private void SetStoreDistanceModelFromStoreDto(StoreDto store, StoreDistanceModel distanceModel)
         {
             var storeModel = Mapper.Map<StoreModel>(store);
-            var businessModel = this._businessService.GetBusinessById(store.BusinessId);
-            var cityModel = this._cityService.GetCityById(store.CityId);
-            storeModel.Business = (businessModel != null) ? Mapper.Map<BusinessModel>(businessModel) : null;
-            storeModel.City = (cityModel != null) ? Mapper.Map<CityModel>(cityModel) : null;
+            var businessDto = this._businessService.GetBusinessById(store.BusinessId);
+            var cityDto= this._cityService.GetCityById(store.CityId);
+            storeModel.Business = (businessDto != null) ? Mapper.Map<BusinessModel>(businessDto) : null;
+            storeModel.City = (cityDto != null) ? Mapper.Map<CityModel>(cityDto) : null;
             distanceModel.Store = storeModel;
         }
 
