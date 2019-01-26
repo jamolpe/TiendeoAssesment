@@ -1,0 +1,647 @@
+{"JsonData": {
+  "Cities": [
+    {
+      "Lat": 40.4203,
+      "Lon": -3.705774,
+      "Name": "Madrid",
+      "Province": "Madrid",
+      "Rank": 1
+    },
+    {
+      "Lat": 41.38559,
+      "Lon": 2.168745,
+      "Name": "Barcelona",
+      "Province": "Barcelona",
+      "Rank": 2
+    }
+  ],
+  "Business": [
+    {
+      "Name": "El Corte Inglés",
+      "Rank": 1,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_43/Marker.png"
+    },
+    {
+      "Name": "Carrefour",
+      "Rank": 2,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_36/Marker.png"
+    },
+    {
+      "Name": "Lidl",
+      "Rank": 3,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_110/Marker.png"
+    },
+    {
+      "Name": "Alcampo",
+      "Rank": 4,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_32/Marker.png"
+    },
+    {
+      "Name": "Mercadona",
+      "Rank": 5,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_31/Marker.png"
+    },
+    {
+      "Name": "Hipercor",
+      "Rank": 6,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_54/Marker.png"
+    },
+    {
+      "Name": "Dia",
+      "Rank": 7,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_1187/Marker.png"
+    },
+    {
+      "Name": "Caprabo",
+      "Rank": 8,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_27/Marker.png"
+    },
+    {
+      "Name": "La Sirena",
+      "Rank": 9,
+      "Marker": "https://static0.tiendeo.com/upload_Business/Business_44/Marker.png"
+    }
+  ],
+  "Stores": [
+    {
+      "Name": "Carrefour Madrid Sur",
+      "Adress": "Avenida de Pablo Neruda, 91-97 ",
+      "City": "Madrid",
+      "Lat": 40.3809929,
+      "Lon": -3.663251,
+      "Business": "Carrefour",
+      "Rank": 1
+    },
+    {
+      "Name": "Carrefour Aluche",
+      "Adress": "Avda. de los Poblados, 58",
+      "City": "Madrid",
+      "Lat": 40.38641,
+      "Lon": -3.764148,
+      "Business": "Carrefour",
+      "Rank": 2
+    },
+    {
+      "Name": "Carrefour Los Ángeles",
+      "Adress": "Avda. Andalucía, km. 7,1",
+      "City": "Madrid",
+      "Lat": 40.36339,
+      "Lon": -3.69213533,
+      "Business": "Carrefour",
+      "Rank": 3
+    },
+    {
+      "Name": "Carrefour Las Glorias",
+      "Adress": "C/Les Glories esq. C/ Llacunna, 155",
+      "City": "Barcelona",
+      "Lat": 41.40588,
+      "Lon": 2.191681,
+      "Business": "Carrefour",
+      "Rank": 4
+    },
+    {
+      "Name": "Carrefour Market Berlín",
+      "Adress": "Calle Berlín, 50-54",
+      "City": "Barcelona",
+      "Lat": 41.38361,
+      "Lon": 2.14012122,
+      "Business": "Carrefour",
+      "Rank": 5
+    },
+    {
+      "Name": "Carrefour La Maquinista",
+      "Adress": "Carrer Potosí, 2",
+      "City": "Barcelona",
+      "Lat": 41.44199,
+      "Lon": 2.198577,
+      "Business": "Carrefour",
+      "Rank": 6
+    },
+    {
+      "Name": "Carrefour Market Mercat del Guinardó",
+      "Adress": "Carrer de Teodor Llorente, 10. Mercat del Guinardó",
+      "City": "Barcelona",
+      "Lat": 41.4192734,
+      "Lon": 2.178715,
+      "Business": "Carrefour",
+      "Rank": 7
+    },
+    {
+      "Name": "Carrefour Market Ramblas",
+      "Adress": "Rambla de los Estudios, 113",
+      "City": "Barcelona",
+      "Lat": 41.383976,
+      "Lon": 2.17075038,
+      "Business": "Carrefour",
+      "Rank": 8
+    },
+    {
+      "Name": "El Corte Inglés",
+      "Adress": "Plaça de Catalunya, 14 ",
+      "City": "Barcelona",
+      "Lat": 41.38772,
+      "Lon": 2.17113757,
+      "Business": "El Corte Inglés",
+      "Rank": 9
+    },
+    {
+      "Name": "La Sirena BCN-ÀLIGA",
+      "Adress": "c/de l'Àliga, 45",
+      "City": "Barcelona",
+      "Lat": 41.3749733,
+      "Lon": 2.143289,
+      "Business": "La Sirena",
+      "Rank": 10
+    },
+    {
+      "Name": "El Corte Inglés ",
+      "Adress": "Av Portal de l'Àngel, 19 ",
+      "City": "Barcelona",
+      "Lat": 41.3858566,
+      "Lon": 2.17246461,
+      "Business": "El Corte Inglés",
+      "Rank": 11
+    },
+    {
+      "Name": "El Corte Inglés",
+      "Adress": "Av. Meridiana, 350-358 ",
+      "City": "Barcelona",
+      "Lat": 41.4280663,
+      "Lon": 2.18546176,
+      "Business": "El Corte Inglés",
+      "Rank": 12
+    },
+    {
+      "Name": "El Corte Inglés",
+      "Adress": "Av Diagonal, 617",
+      "City": "Barcelona",
+      "Lat": 41.38745,
+      "Lon": 2.1280973,
+      "Business": "El Corte Inglés",
+      "Rank": 13
+    },
+    {
+      "Name": "El Corte Inglés",
+      "Adress": "Av Diagonal, 471",
+      "City": "Barcelona",
+      "Lat": 41.3925667,
+      "Lon": 2.1463418,
+      "Business": "El Corte Inglés",
+      "Rank": 14
+    },
+    {
+      "Name": "Caprabo - Barcelona - Josep Tarradelles",
+      "Adress": "Av. de Josep Tarradellas, 114",
+      "City": "Barcelona",
+      "Lat": 41.3896141,
+      "Lon": 2.14369845,
+      "Business": "Caprabo",
+      "Rank": 15
+    },
+    {
+      "Name": "Caprabo - Barcelona - Consell de Cent",
+      "Adress": "Carrer del Consell de Cent, 301",
+      "City": "Barcelona",
+      "Lat": 41.3887444,
+      "Lon": 2.16238451,
+      "Business": "Caprabo",
+      "Rank": 16
+    },
+    {
+      "Name": "Caprabo - Barcelona - L'Illa Diagonal",
+      "Adress": "Avinguda Diagonal, 545",
+      "City": "Barcelona",
+      "Lat": 41.38926,
+      "Lon": 2.1338,
+      "Business": "Caprabo",
+      "Rank": 17
+    },
+    {
+      "Name": "Caprabo - Barcelona - Passeig de Fabra I Puig",
+      "Adress": "Passeig Fabra i Puig, 299",
+      "City": "Barcelona",
+      "Lat": 41.43026,
+      "Lon": 2.168809,
+      "Business": "Caprabo",
+      "Rank": 18
+    },
+    {
+      "Name": "Caprabo - Barcelona - Sicilia",
+      "Adress": "Carrer de Sicília, 220",
+      "City": "Barcelona",
+      "Lat": 41.3981972,
+      "Lon": 2.17817879,
+      "Business": "Caprabo",
+      "Rank": 19
+    },
+    {
+      "Name": "Caprabo - Barcelona - St. Crist",
+      "Adress": "Carrer del Sant Crist, 37",
+      "City": "Barcelona",
+      "Lat": 41.37459,
+      "Lon": 2.13870859,
+      "Business": "Caprabo",
+      "Rank": 20
+    },
+    {
+      "Name": "Mercadona RAMBLA DE POBLENOU",
+      "Adress": "Rambla De Poblenou, 95",
+      "City": "Barcelona",
+      "Lat": 41.40237,
+      "Lon": 2.199068,
+      "Business": "Mercadona",
+      "Rank": 21
+    },
+    {
+      "Name": "Mercadona AVDA. ROMA",
+      "Adress": "Avda. Roma, 22-30",
+      "City": "Barcelona",
+      "Lat": 41.3811,
+      "Lon": 2.145611,
+      "Business": "Mercadona",
+      "Rank": 22
+    },
+    {
+      "Name": "Alcampo Diagonal Mar",
+      "Adress": "Avda. Diagonal Mar, 15. - C.C.Diagonal Mar",
+      "City": "Barcelona",
+      "Lat": 41.40923,
+      "Lon": 2.21614,
+      "Business": "Alcampo",
+      "Rank": 23
+    },
+    {
+      "Name": "Dia Market",
+      "Adress": "Cl. craywinckel 20",
+      "City": "Barcelona",
+      "Lat": 41.41176,
+      "Lon": 2.13888335,
+      "Business": "Dia",
+      "Rank": 24
+    },
+    {
+      "Name": "Dia Market",
+      "Adress": "Cl. laforja, 12-14",
+      "City": "Barcelona",
+      "Lat": 41.3999252,
+      "Lon": 2.15056968,
+      "Business": "Dia",
+      "Rank": 25
+    },
+    {
+      "Name": "La Sirena BCN-ARNAU D'OMS",
+      "Adress": "c/d'Arnau d'Oms, 34-36",
+      "City": "Barcelona",
+      "Lat": 41.42985,
+      "Lon": 2.17755413,
+      "Business": "La Sirena",
+      "Rank": 26
+    },
+    {
+      "Name": "Lidl",
+      "Adress": "C/ Casanova 77-79",
+      "City": "Barcelona",
+      "Lat": 41.3859634,
+      "Lon": 2.15775323,
+      "Business": "Lidl",
+      "Rank": 27
+    },
+    {
+      "Name": "Lidl",
+      "Adress": "C/ Pujades, 15-17",
+      "City": "Barcelona",
+      "Lat": 41.39279,
+      "Lon": 2.18837929,
+      "Business": "Lidl",
+      "Rank": 28
+    },
+    {
+      "Name": "Lidl",
+      "Adress": "Gran Via Corts Catalanes, 721",
+      "City": "Barcelona",
+      "Lat": 41.39823,
+      "Lon": 2.17951,
+      "Business": "Lidl",
+      "Rank": 29
+    },
+    {
+      "Name": "Lidl",
+      "Adress": "C/ Bailén, 165-167",
+      "City": "Barcelona",
+      "Lat": 41.4004059,
+      "Lon": 2.16568971,
+      "Business": "Lidl",
+      "Rank": 30
+    },
+    {
+      "Name": "Lidl",
+      "Adress": "C/ Cartagena, 210",
+      "City": "Barcelona",
+      "Lat": 41.40642,
+      "Lon": 2.18081,
+      "Business": "Lidl",
+      "Rank": 31
+    }
+  ],
+  "Services": [
+    [
+      {
+        "ServiceType": "Cajero",
+        "Adress": "GRAN VIA CORTS CATALANES, 536",
+        "City": "Barcelona",
+        "Lat": 41.38252,
+        "Lon": 2.15953135
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV. DE MADRID, 92",
+        "City": "Barcelona",
+        "Lat": 41.37833,
+        "Lon": 2.127494
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV. DE ROMA, 32-40",
+        "City": "Barcelona",
+        "Lat": 41.3814964,
+        "Lon": 2.14593124
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV. DE SARRIA, 150",
+        "City": "Barcelona",
+        "Lat": 41.3924561,
+        "Lon": 2.13100815
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "GRAN VÍA DE LES CORTS CATALANES, 184",
+        "City": "Barcelona",
+        "Lat": 41.36718,
+        "Lon": 2.13979
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "C. PUJADES, 328",
+        "City": "Barcelona",
+        "Lat": 41.4073524,
+        "Lon": 2.20764327
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV ICARIA, 148",
+        "City": "Barcelona",
+        "Lat": 41.3904457,
+        "Lon": 2.19630647
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV MADRID, 33",
+        "City": "Barcelona",
+        "Lat": 41.3771248,
+        "Lon": 2.124676
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV. REPUBLICA ARGENTINA, 79",
+        "City": "Barcelona",
+        "Lat": 41.4103432,
+        "Lon": 2.14575529
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV. VALLCARCA, 20",
+        "City": "Barcelona",
+        "Lat": 41.4085732,
+        "Lon": 2.1491003
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "PS GRACIA, 17",
+        "City": "Barcelona",
+        "Lat": 41.38988,
+        "Lon": 2.167255
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "C. ALABA, 45-47",
+        "City": "Barcelona",
+        "Lat": 41.3952675,
+        "Lon": 2.19537163
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "CL TUSET , 20",
+        "City": "Barcelona",
+        "Lat": 41.39592,
+        "Lon": 2.152178
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "C. ANGEL MARQUES 10 EXPL. MONTBAU",
+        "City": "Barcelona",
+        "Lat": 41.4301147,
+        "Lon": 2.14228725
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "C. ANTONIO MACHADO, 4",
+        "City": "Barcelona",
+        "Lat": 41.44172,
+        "Lon": 2.1634748
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "Cl Roger de Lluria, 37 8009 BARCELONA",
+        "City": "Barcelona",
+        "Lat": 41.38016,
+        "Lon": 2.12851381
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "Avenida Meridiana 216",
+        "City": "Barcelona",
+        "Lat": 41.4155655,
+        "Lon": 2.18699074
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "Ps Burrull, 4-8 8018 BARCELONA",
+        "City": "Barcelona",
+        "Lat": 41.40474,
+        "Lon": 2.19748878
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "RONDA DE SANT PAU, 1",
+        "City": "Barcelona",
+        "Lat": 41.37533,
+        "Lon": 2.16727877
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "C. ARAGO, 355",
+        "City": "Barcelona",
+        "Lat": 41.39739,
+        "Lon": 2.17153978
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "PZ. URQUINAONA, 10",
+        "City": "Barcelona",
+        "Lat": 41.3807678,
+        "Lon": 2.17338419
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "RAMBLA DE CATALUNYA, 36",
+        "City": "Barcelona",
+        "Lat": 41.38988,
+        "Lon": 2.16529536
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "SANT ADRIA, 1-9",
+        "City": "Barcelona",
+        "Lat": 41.4339943,
+        "Lon": 2.19013119
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AVDA GAUDI,69",
+        "City": "Barcelona",
+        "Lat": 41.40951,
+        "Lon": 2.17408848
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV. ALBUFERA, 135",
+        "City": "Madrid",
+        "Lat": 40.3927422,
+        "Lon": -3.6584003
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV. CANTABRIA, 35",
+        "City": "Madrid",
+        "Lat": 40.458,
+        "Lon": -3.58691144
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "AV. City DE BARCELONA, 204",
+        "City": "Madrid",
+        "Lat": 40.4000435,
+        "Lon": -3.67280269
+      },
+      {
+        "ServiceType": "Cajero",
+        "Adress": "CL ALCALA, 26",
+        "City": "Madrid",
+        "Lat": 40.4180336,
+        "Lon": -3.698406
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Carrer de Santa Fe de Nou Mèxic, s/n",
+        "City": "Barcelona",
+        "Lat": 41.3935776,
+        "Lon": 2.13606882
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Avda. Diagonal, 3",
+        "City": "Barcelona",
+        "Lat": 41.4106941,
+        "Lon": 2.21764064
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Passeig d'Andreu Nin, s/n",
+        "City": "Barcelona",
+        "Lat": 41.43572,
+        "Lon": 2.180325
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Carrer de Potosí, 2",
+        "City": "Barcelona",
+        "Lat": 41.4427452,
+        "Lon": 2.200215
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Via Augusta, 12-14, Badalona, España",
+        "City": "Badalona",
+        "Lat": 41.450737,
+        "Lon": 2.24632239
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Calle Gran Vía, 41",
+        "City": "Madrid",
+        "Lat": 40.42045,
+        "Lon": -3.706582
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Paseo de la Florida, S/N",
+        "City": "Madrid",
+        "Lat": 40.4204178,
+        "Lon": -3.71844935
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Fuencarral, 136",
+        "City": "Madrid",
+        "Lat": 40.43135,
+        "Lon": -3.703301
+      },
+      {
+        "ServiceType": "Lavabo",
+        "Adress": "Calle Acanto, 2",
+        "City": "Madrid",
+        "Lat": 40.396534,
+        "Lon": -3.675543
+      },
+      {
+        "ServiceType": "Punto de información",
+        "Adress": "Avenida de Guadalajara, 2",
+        "City": "Madrid",
+        "Lat": 40.41821,
+        "Lon": -3.62317419
+      },
+      {
+        "ServiceType": "Punto de información",
+        "Adress": "Av. Meridiana, 350-358 ",
+        "City": "Barcelona",
+        "Lat": 41.4280663,
+        "Lon": 2.18546176
+      },
+      {
+        "ServiceType": "Punto de recogida",
+        "Adress": "RDA,UNIVERSITAT,23, Barcelona",
+        "City": "Barcelona",
+        "Lat": 41.38687,
+        "Lon": 2.16680741
+      },
+      {
+        "ServiceType": "Punto de recogida",
+        "Adress": "AUSIAS MARCH, 13-17",
+        "City": "Barcelona",
+        "Lat": 41.390316,
+        "Lon": 2.17428613
+      },
+      {
+        "ServiceType": "Punto de recogida",
+        "Adress": "PL. CALLAO 2 - 7ª PLANTA",
+        "City": "Madrid",
+        "Lat": 40.4199257,
+        "Lon": -3.706074
+      }
+    ]
+  ]
+
+}
+}
+

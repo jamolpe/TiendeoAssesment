@@ -20,6 +20,7 @@ namespace TiendeoAPI.Controllers
         {
             this._storeCore = storeCore;
         }
+        
         [HttpGet("GetStoresOrderByRank")]
         public IActionResult GetStoresOrderByRank()
         {
