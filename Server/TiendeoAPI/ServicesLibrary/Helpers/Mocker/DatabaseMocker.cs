@@ -62,7 +62,8 @@ namespace ServicesLibrary.Helpers.Mocker
                 Long = -3.663251,
                 Adress = "Avenida de Pablo Neruda, 91-97",
                 RankPosition = 1,
-                BusinessId = 2
+                BusinessId = 2,
+                CityId = 1
             };
             var storeMockTwo = new StoreDto
             {
@@ -72,7 +73,8 @@ namespace ServicesLibrary.Helpers.Mocker
                 Long = -3.764148,
                 Adress = "Avda. de los Poblados, 58",
                 RankPosition = 1,
-                BusinessId = 2
+                BusinessId = 2,
+                CityId = 1
             };
             this._dataContext.Stores.AddAsync(storeMockOne);
             this._dataContext.Stores.AddAsync(storeMockTwo);

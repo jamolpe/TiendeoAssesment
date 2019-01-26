@@ -17,6 +17,8 @@ using ServicesLibrary.Helpers;
 using ServicesLibrary.Helpers.Mocker;
 using ServicesLibrary.Interfaces;
 using ServicesLibrary.Services;
+using TiendeoAPI.Core.Interfaces;
+using TiendeoAPI.Core.StoreCore;
 using TiendeoAPI.Helpers.Mappers;
 using TiendeoAPI.Models;
 
@@ -54,12 +56,15 @@ namespace TiendeoAPI
             {
                 cfg.AddProfile(new BusinessMapper());
                 cfg.AddProfile(new CityMapper());
+                cfg.AddProfile(new ServiceMapper());
+                cfg.AddProfile(new StoreMapper());
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IBusinessService, BusinessService>();
             services.AddScoped<ICityService, CityService>();
             services.AddScoped<ILocalService, LocalService>();
+            services.AddScoped<IStoreCore, StoreCore>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

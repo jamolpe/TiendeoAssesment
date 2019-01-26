@@ -11,14 +11,9 @@ namespace TiendeoAPI.Helpers.Mappers
 {
     public class StoreMapper : Profile
     {
-        public StoreMapper(ICityService cityService,IBusinessService businessService)
+        public StoreMapper()
         {
-            CreateMap<StoreDto, StoreModel>().AfterMap((source, destination, context) =>
-                {
-                    destination.City = context.Mapper.Map<CityModel>(cityService.GetCityById(source.Id));
-                    destination.Business =
-                        context.Mapper.Map<BusinessModel>(businessService.GetBusinessById(source.Id));
-                });
+            CreateMap<StoreDto, StoreModel>();
         }
     }
 }
