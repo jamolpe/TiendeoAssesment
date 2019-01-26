@@ -9,5 +9,6 @@ namespace TiendeoAPI.Core.Interfaces
     public interface IStoreCore
     {
         List<StoreModel> GetStoresOrderByRank();
+        StoreModel GetNearestStoreFromCoords(Coord userCoord);
     }
 }

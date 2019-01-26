@@ -5,9 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Core\CityCore\" />
-    <Folder Include="Core\BusinessCore\" />
-    <Folder Include="Core\ServiceCore\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

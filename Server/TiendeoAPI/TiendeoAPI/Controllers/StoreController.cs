@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 using TiendeoAPI.Core.Interfaces;
 using TiendeoAPI.Core.StoreCore;
+using TiendeoAPI.Models;
 
 namespace TiendeoAPI.Controllers
 {
@@ -36,10 +37,40 @@ namespace TiendeoAPI.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error: " + e.StackTrace);
+                Console.WriteLine("Error: " + e.Message + " StackTrace: " + e.StackTrace);
                 return BadRequest(new {message = "error: check the api log"});
             }
             
+        }
+
+        [HttpPost("GetNearestStoreFromCoords")]
+        public IActionResult GetNearestStoreFromCoords([FromBody]Coord userCoords)
+        {
+            try
+            {
+                if (userCoords != null)
+                {
+                    var result = this._storeCore.GetNearestStoreFromCoords(userCoords);
+                    if (result != null)
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        return BadRequest(new {message = "no results found"});
+                    }
+
+                }
+                else
+                {
+                   return BadRequest(new {message = "user coords invalid format"});
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: "+ e.Message + " StackTrace: " + e.StackTrace);
+                return BadRequest(new {message = "error: check the api log"});
+            }
         }
     }
 }
