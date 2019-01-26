@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TiendeoAPI.Helpers.enums;
+﻿using TiendeoAPI.Helpers.enums;
 
 namespace TiendeoAPI.Models
 {

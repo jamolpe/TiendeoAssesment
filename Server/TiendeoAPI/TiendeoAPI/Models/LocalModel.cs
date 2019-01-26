@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TiendeoAPI.Models
+﻿namespace TiendeoAPI.Models
 {
     public class LocalModel
     {

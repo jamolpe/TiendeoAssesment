@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using ServicesLibrary.Helpers;
 using ServicesLibrary.Interfaces;
 using ServicesLibrary.Models;
@@ -29,7 +27,7 @@ namespace ServicesLibrary.Services
 
         public List<StoreDto> GetAllStoresOrderedByRank()
         {
-            return this._context.Stores.OrderBy(x => x.RankPosition).ToList();
+            return this._context.Stores.OrderBy(x => x.Rank).ToList();
         }
 
     }

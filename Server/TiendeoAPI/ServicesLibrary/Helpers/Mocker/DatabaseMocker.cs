@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using Newtonsoft.Json;
-using Remotion.Linq.Parsing.Structure.IntermediateModel;
 using ServicesLibrary.Interfaces;
 using ServicesLibrary.Models;
 
@@ -221,7 +218,7 @@ namespace ServicesLibrary.Helpers.Mocker
                         Lat = s.Lat,
                         Lon = s.Lon,
                         Name = s.Name,
-                        RankPosition = s.Rank
+                        Rank = s.Rank
                     };
                     this._dataContext.Stores.AddAsync(store);
                     this._lastLocalId++;
@@ -235,7 +232,7 @@ namespace ServicesLibrary.Helpers.Mocker
             //    Lat = 40.3809929,
             //    Lon = -3.663251,
             //    Adress = "Avenida de Pablo Neruda, 91-97",
-            //    RankPosition = 1,
+            //    Rank = 1,
             //    BusinessId = 2,
             //    CityId = 1
             //};
@@ -246,7 +243,7 @@ namespace ServicesLibrary.Helpers.Mocker
             //    Lat = 40.38641,
             //    Lon = -3.764148,
             //    Adress = "Avda. de los Poblados, 58",
-            //    RankPosition = 1,
+            //    Rank = 1,
             //    BusinessId = 2,
             //    CityId = 1
             //};

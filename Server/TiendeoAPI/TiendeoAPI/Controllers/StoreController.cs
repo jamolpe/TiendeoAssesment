@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 using TiendeoAPI.Core.Interfaces;
-using TiendeoAPI.Core.StoreCore;
 using TiendeoAPI.Models;
 
 namespace TiendeoAPI.Controllers
