@@ -73,5 +73,34 @@ namespace TiendeoAPI.Controllers
                 return BadRequest(new {message = "error: check the api log"});
             }
         }
+
+        [HttpPost("GetXNearestStoresFromCoords/{count}")]
+        public IActionResult GetXNearestStoresFromCoords(int count,[FromBody] Coord userCoords)
+        {
+            try
+            {
+                if (userCoords != null)
+                {
+                    var result = this._storeCore.GetXNearestStoresFromCoords(userCoords,count);
+                    if (result != null)
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        return BadRequest(new { message = "no results found" });
+                    }
+                }
+                else
+                {
+                    return BadRequest(new { message = "user coords invalid format" });
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message + " StackTrace: " + e.StackTrace);
+                return BadRequest(new { message = "error: check the api log" });
+            }
+        }
     }
 }

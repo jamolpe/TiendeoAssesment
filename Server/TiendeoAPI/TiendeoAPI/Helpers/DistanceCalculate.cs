@@ -17,7 +17,7 @@ namespace TiendeoAPI.Helpers
             double a = Math.Sin(lat / 2) * Math.Sin(lat / 2) + Math.Cos(userCoord.Lat * (Math.PI / 180)) * Math.Cos(objCoord.Lat * (Math.PI / 180)) * Math.Sin(lon / 2) * Math.Sin(lon / 2);
             double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
             distance = EarthRadius * c;
-            return distance;
+            return Math.Round(distance, 2);
         }
     }
 }
