@@ -39,6 +39,29 @@ namespace TiendeoAPI.Controllers
             
         }
 
+        [HttpGet("GetTopXFromCityStoresOrderByRank/{cityname}/{number}")]
+        public IActionResult GetTopXFromCityStoresOrderByRank(string cityname, int number)
+        {
+            try
+            {
+                var result = this._storeCore.GetXStoresFromCityOrderByRank(cityname, number);
+                if (result != null && result.Any())
+                {
+                    return Ok(result);
+                }
+                else
+                {
+                    return BadRequest(new { message = "no results found" });
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message + " StackTrace: " + e.StackTrace);
+                return BadRequest(new { message = "error: check the api log" });
+            }
+
+        }
+
         [HttpPost("GetNearestStoreFromCoords")]
         public IActionResult GetNearestStoreFromCoords([FromBody]Coord userCoords)
         {

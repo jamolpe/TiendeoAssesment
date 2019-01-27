@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TopBarComponent from "../../components/topbar-component";
-import MapComponent from "../../components/map-component";
+import MapContainer from "../map-container";
 
 export default class MainContainer extends Component {
   constructor(props) {
@@ -10,15 +10,17 @@ export default class MainContainer extends Component {
     };
   }
   ChangeSite = site => {
-    console.log("lanzado" + site);
     this.setState({ mapsite: site });
   };
   render() {
     return (
       <div>
-        <TopBarComponent ChangeSite={this.ChangeSite} />
+        <TopBarComponent
+          active={this.state.mapsite}
+          ChangeSite={this.ChangeSite}
+        />
         <div className="main-body">
-          <MapComponent mapsite={this.state.mapsite} />
+          <MapContainer mapsite={this.state.mapsite} />
         </div>
       </div>
     );

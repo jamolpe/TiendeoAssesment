@@ -34,12 +34,13 @@ code {
     .active {
       background-color: green;
     }
-    a {
+    span {
       text-decoration: none;
       color: white;
       padding: 16px;
       display: inline-block;
       cursor: pointer;
+      height: 18px;
     }
     height: 50px;
   }
