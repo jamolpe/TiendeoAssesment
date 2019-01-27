@@ -1,13 +1,26 @@
 import React, { Component } from "react";
+import TopBarCityElement from "./TopBarCityElement";
 
 export default class TopBarComponent extends Component {
   HandleChangeSite = site => {
     this.props.ChangeSite(site);
   };
   render() {
+    var { cities } = this.props;
     return (
       <div className="top-bar">
-        <span>
+        {cities
+          ? cities.map((city, i) => {
+              return (
+                <TopBarCityElement
+                  key={i}
+                  cityName={city.name}
+                  HandleChangeSite={() => this.HandleChangeSite(city.name)}
+                />
+              );
+            })
+          : ""}
+        {/* <span>
           <span
             className={this.props.active === "Barcelona" ? "active" : ""}
             onClick={() => this.HandleChangeSite("Barcelona")}
@@ -22,7 +35,7 @@ export default class TopBarComponent extends Component {
           >
             Madrid
           </span>
-        </span>
+        </span> */}
       </div>
     );
   }
