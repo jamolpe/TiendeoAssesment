@@ -12,6 +12,17 @@ export const LoadCityServices = city => {
     }
   });
 };
+export const LoadCities = () => {
+  return fetch("http://localhost:5001/api/City", {
+    method: "GET"
+  }).then(response => {
+    if (response.status === 200) {
+      return response.json();
+    } else {
+      return response.statusText;
+    }
+  });
+};
 
 export const LoadTopStoresFromCity = (city, number) => {
   return fetch(
