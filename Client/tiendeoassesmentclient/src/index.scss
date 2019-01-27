@@ -18,7 +18,12 @@ code {
   margin-left: 50px;
   margin-right: 50px;
 }
-
+.main-map {
+  margin: 20%;
+  .city-name {
+    text-align: center;
+  }
+}
 .top-bar {
   position: fixed;
   top: 0;
