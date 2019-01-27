@@ -66,20 +66,19 @@ namespace TiendeoAPI
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                using (var serviceScope = app.ApplicationServices.CreateScope())
-                {
-                    var context = serviceScope.ServiceProvider.GetService<DataContext>();
-                    DatabaseMocker databaseMocker = new DatabaseMocker(context);
-                    databaseMocker.Seed();
-                }
-                
+
             }
             else
             {
                 app.UseHsts();
             }
-
+            app.UseDeveloperExceptionPage();
+            using (var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                    var context = serviceScope.ServiceProvider.GetService<DataContext>();
+                    DatabaseMocker databaseMocker = new DatabaseMocker(context);
+                    databaseMocker.Seed();
+            }
             app.UseHttpsRedirection();
             app.UseMvc();
         }
