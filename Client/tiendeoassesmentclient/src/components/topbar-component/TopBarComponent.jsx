@@ -14,8 +14,9 @@ export default class TopBarComponent extends Component {
               return (
                 <TopBarCityElement
                   key={i}
+                  active={this.props.active === city.name ? true : false}
                   cityName={city.name}
-                  HandleChangeSite={() => this.HandleChangeSite(city.name)}
+                  HandleChangeSite={() => this.HandleChangeSite(city)}
                 />
               );
             })

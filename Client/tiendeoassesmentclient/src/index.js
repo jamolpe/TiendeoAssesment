@@ -4,6 +4,7 @@ import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 import MainContainer from "./containers/main-container";
 import store from "./store";
+import "bootstrap/dist/css/bootstrap.css";
 
 import { Provider } from "react-redux";
 ReactDOM.render(
