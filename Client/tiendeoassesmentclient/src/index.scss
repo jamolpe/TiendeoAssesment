@@ -24,6 +24,30 @@ code {
     text-align: center;
   }
 }
+.marker-container {
+  min-width: 100px;
+  text-align: center;
+  min-height: 13px;
+  display: inline-block;
+  background: wheat;
+  border-radius: 5px;
+  .business-name {
+    width: 100%;
+    background: burlywood;
+  }
+  .img-container {
+    width: 100%;
+  }
+  .green {
+    background: #90ee90;
+  }
+  .orange {
+    background: #ffa07a;
+  }
+  .red {
+    background: #f08080;
+  }
+}
 .top-bar {
   z-index: 999;
   position: fixed;

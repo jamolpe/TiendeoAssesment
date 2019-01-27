@@ -13,7 +13,7 @@ class MapContainer extends Component {
   }
   HandleNumberOfStores = ({ target }) => {
     this.setState({ numberOfStores: target.value });
-    if (!this.CheckIsNumber(this.state.numberOfStores)) {
+    if (!this.CheckIsNumber(target.value)) {
       this.setState({ hasValidationError: true });
     } else {
       this.setState({ hasValidationError: false });
@@ -25,7 +25,7 @@ class MapContainer extends Component {
   OnShowClick = () => {
     if (!this.state.hasValidationError) {
       this.props.loadCityTopStores(
-        this.props.mapsite,
+        this.props.mapsite.name,
         this.state.numberOfStores
       );
     }
@@ -41,18 +41,22 @@ class MapContainer extends Component {
             <SelectorComponent
               numberOfStores={this.state.numberOfStores}
               handleTextChange={this.HandleNumberOfStores}
-              onShowClick={this.OnShowClick}
               validationError={this.state.hasValidationError}
+              onShowClick={this.OnShowClick}
             />
           </>
         ) : (
           ""
         )}
-        <MapComponent
-          city={mapsite}
-          center={{ lat: mapsite.lat, lng: mapsite.lon }}
-          stores={data}
-        />
+        {data ? (
+          <MapComponent
+            city={mapsite}
+            center={{ lat: mapsite.lat, lng: mapsite.lon }}
+            stores={data}
+          />
+        ) : (
+          ""
+        )}
       </div>
     );
   }

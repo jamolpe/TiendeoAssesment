@@ -21,22 +21,6 @@ export default class TopBarComponent extends Component {
               );
             })
           : ""}
-        {/* <span>
-          <span
-            className={this.props.active === "Barcelona" ? "active" : ""}
-            onClick={() => this.HandleChangeSite("Barcelona")}
-          >
-            Barcelona
-          </span>
-        </span>
-        <span>
-          <span
-            className={this.props.active === "Madrid" ? "active" : ""}
-            onClick={() => this.HandleChangeSite("Madrid")}
-          >
-            Madrid
-          </span>
-        </span> */}
       </div>
     );
   }
