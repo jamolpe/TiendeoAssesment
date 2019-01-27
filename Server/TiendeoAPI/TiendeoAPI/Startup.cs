@@ -9,6 +9,7 @@ using ServicesLibrary.Helpers;
 using ServicesLibrary.Helpers.Mocker;
 using ServicesLibrary.Interfaces;
 using ServicesLibrary.Services;
+using TiendeoAPI.Core.CityCore;
 using TiendeoAPI.Core.Interfaces;
 using TiendeoAPI.Core.ServiceCore;
 using TiendeoAPI.Core.StoreCore;
@@ -24,8 +25,6 @@ namespace TiendeoAPI
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-
-          
         }
 
         public IConfiguration Configuration { get; }
@@ -59,27 +58,33 @@ namespace TiendeoAPI
             services.AddScoped<ILocalService, LocalService>();
             services.AddScoped<IStoreCore, StoreCore>();
             services.AddScoped<IServiceCore, ServiceCore>();
+            services.AddScoped<ICityCore, CityCore>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                using (var serviceScope = app.ApplicationServices.CreateScope())
-                {
-                    var context = serviceScope.ServiceProvider.GetService<DataContext>();
-                    DatabaseMocker databaseMocker = new DatabaseMocker(context);
-                    databaseMocker.Seed();
-                }
-                
+
             }
             else
             {
                 app.UseHsts();
             }
-
+            app.UseDeveloperExceptionPage();
+            using (var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                    var context = serviceScope.ServiceProvider.GetService<DataContext>();
+                    DatabaseMocker databaseMocker = new DatabaseMocker(context);
+                    databaseMocker.Seed();
+            }
             app.UseHttpsRedirection();
             app.UseMvc();
         }

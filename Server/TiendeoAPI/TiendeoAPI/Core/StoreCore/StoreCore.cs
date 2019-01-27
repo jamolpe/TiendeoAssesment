@@ -24,6 +24,11 @@ namespace TiendeoAPI.Core.StoreCore
 
         public List<StoreModel> GetStoresOrderByRank()
         {
+            return this.GetStores().OrderBy(x => x.Rank).ToList();
+        }
+
+        private List<StoreModel> GetStores()
+        {
             List<StoreModel> resultStores = new List<StoreModel>();
             var storesDtos = this._localService.GetAllStores();
 
@@ -36,8 +41,20 @@ namespace TiendeoAPI.Core.StoreCore
                 storeModel.City = (cityDto != null) ? Mapper.Map<CityModel>(cityDto) : null;
                 resultStores.Add(storeModel);
             });
+            return resultStores;
+        }
 
-            return resultStores.OrderBy(x => x.Rank).ToList();
+        public List<StoreModel> GetXStoresFromCityOrderByRank(string name,int number)
+        {
+            var city = this._cityService.GetCityByName(name);
+            if(city != null)
+            {
+                return this.GetStores().Where(store => store.City.Name == name).Take(number).OrderBy(x => x.Rank).ToList();
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public StoreDistanceModel GetNearestStoreFromCoords(Coord userCoord)
