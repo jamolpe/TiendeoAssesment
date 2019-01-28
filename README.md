@@ -11,7 +11,7 @@ Las tecnologias utilizadas son las siguientes:
 - Docker
 - Git
 
-##Herramientas:
+## Herramientas:
 
 - Visual Studio Code
 - Visual Studio 2017
